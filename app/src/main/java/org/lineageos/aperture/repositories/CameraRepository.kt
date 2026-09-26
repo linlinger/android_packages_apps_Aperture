@@ -147,9 +147,11 @@ class CameraRepository(
     companion object {
         /**
          * List of main camera IDs. These should never be excluded.
+         * AviumUI: 主后摄用逻辑相机 4 (物理广角2+主摄0 融合, 对齐 ColorOS OPPO 相机)
+         * 前置保持 1。
          */
         private val mainCameraIds = setOf(
-            "0",
+            "4",
             "1",
         )
     }
